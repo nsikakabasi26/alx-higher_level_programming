@@ -1,16 +1,8 @@
 #!/usr/bin/python3
-
-
-def safe_print_list(my_list=[], x=0):
-    c = 0
-
-    for i in range(x):
-        try:
-            print("{}".format(my_list[i]), end='')
-        except IndexError:
-            break
-        else:
-            c += 1
-
-    print()
-    return (c)
+def safe_print_integer(value):
+    try:
+        int(value)
+        print("{:d}".format(value))
+        return (True)
+    except (ValueError, TypeError):
+        return (False)
