@@ -1,0 +1,3 @@
+0x09. Python - Everything is object
+A list is an ordered set of values, where each value is identified by an index. The values that make up a list are called its elements. 
+This project is meant to tackle the confusions related to objects, values and Aliasing...
